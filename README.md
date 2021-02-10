@@ -23,11 +23,17 @@ Maxonrow benchmark tools is used to check the throughput and latency of the maxo
     
    WHERE the `localhost` indicate that `MAXONROW blockchain network` was startup in the local HOST.
 
-4. Build the `Maxonrow-benchmark-go`
+4. Configure the Number of Transactions to be generate by refer to the main.go,  
+
+    `var receiverList = 10` 
+    
+   WHERE each Receiver Account will be generated randomly, along with the number of Sender Account.  
+
+5. Build the `Maxonrow-benchmark-go`
 
     `make build`
 
-5. RUN the `Maxonrow-benchmark-go` to interact with `MAXONROW blockchain network`
+6. RUN the `Maxonrow-benchmark-go` to interact with `MAXONROW blockchain network`
 
     `./build/benchmark`
 
